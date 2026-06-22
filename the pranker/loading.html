@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Override...</title>
+    <link rel="stylesheet" href="loading-style.css">
+</head>
+<body>
+    <div class="bottom-bar"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>C:\SYSTEM\override.exe -- ACCESS GRANTED</h1>
+            <p class="subtitle">[INITIALIZING KERNEL MODE...] PID: 0x4F2A | SESSION: ROOT</p>
+        </div>
+
+        <div class="terminal">
+            <div class="line"><span class="prompt">root@darknet:~#</span> <span class="command">nmap -sV --script=vuln 192.168.1.0/24</span></div>
+            <div class="line"><span class="system">Starting Nmap scan...</span></div>
+            <div class="line"><span class="success">Host 192.168.1.1 is up (0.0023s latency)</span></div>
+            <div class="line"><span class="success">Host 192.168.1.42 is up (0.0018s latency)</span></div>
+            <div class="line"><span class="warning">PORT 22/tcp open ssh OpenSSH 7.6p1</span></div>
+            <div class="line"><span class="warning">PORT 80/tcp open http Apache/2.4.29</span></div>
+            <div class="line"><span class="error">PORT 443/tcp open https VULNERABLE: CVE-2024-3094</span></div>
+            <div class="line"><span class="command">root@darknet:~#</span> <span class="command">exploit --target=192.168.1.42 --payload=reverse_shell</span></div>
+            <div class="line"><span class="warning">[*] Exploiting target...</span></div>
+            <div class="line"><span class="success">[+] Shell access obtained!</span></div>
+            <div class="line"><span class="command">root@darknet:~#</span> <span class="command">cat /etc/shadow | head -20</span></div>
+            <div class="line"><span class="file">root:$6$rounds=5000$salt$hash... [EXTRACTED]</span></div>
+            <div class="line"><span class="file">admin:$6$rounds=5000$salt$hash... [EXTRACTED]</span></div>
+            <div class="line"><span class="command">root@darknet:~#</span> <span class="command">ssh -L 8080:localhost:80 root@target</span></div>
+            <div class="line"><span class="success">[+] Tunnel established on port 8080</span></div>
+            <div class="line"><span class="warning">[*] Scanning for sensitive files...</span></div>
+            <div class="line"><span class="error">[!] ENCRYPTING FILES... DO NOT INTERRUPT</span></div>
+            <div class="line"><span class="error">[!] RANSOMWARE DEPLOYED SUCCESSFULLY</span></div>
+        </div>
+
+        <div class="loading-section">
+            <div class="loading-label">
+                <span>DECRYPTING SYSTEM FILES...</span>
+                <span id="percent">0%</span>
+            </div>
+            <div class="loading-bar-bg">
+                <div class="loading-bar-fill"></div>
+            </div>
+        </div>
+
+        <div class="scroll-warning">
+            <span class="scroll-text">
+                *** CRITICAL SECURITY ALERT *** UNAUTHORIZED ACCESS DETECTED *** YOUR FILES ARE BEING ENCRYPTED *** DO NOT SHUT DOWN YOUR COMPUTER *** RANSOM DEMAND: 2.5 BTC *** ALL PERSONAL DATA HAS BEEN EXFILTRATED ***
+            </span>
+        </div>
+
+        <div class="breach-warning">
+            <div class="breach-icon">&#9888;</div>
+            <h2 class="breach-title">SYSTEM BREACH DETECTED</h2>
+            <p class="breach-sub">SECURITY PROTOCOLS HAVE BEEN COMPROMISED. INITIATING EMERGENCY LOCKDOWN.</p>
+        </div>
+
+        <div class="countdown-section">
+            <p class="countdown-label">TIME REMAINING UNTIL DATA WIPE:</p>
+            <div class="countdown-timer">
+                <div class="countdown-box">
+                    <div class="countdown-number">00</div>
+                    <div class="countdown-unit">DAYS</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number">04</div>
+                    <div class="countdown-unit">HOURS</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number">37</div>
+                    <div class="countdown-unit">MINS</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number">52</div>
+                    <div class="countdown-unit">SECS</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="file-section">
+            <h3>&#128193; ACCESSING SENSITIVE FILES...</h3>
+            <div class="file-list">
+                <div class="file-item stolen">
+                    <span class="file-name">C:\Users\Documents\passwords.txt</span>
+                    <span class="file-status">STOLEN</span>
+                </div>
+                <div class="file-item stolen">
+                    <span class="file-name">C:\Users\Desktop\crypto_wallet.dat</span>
+                    <span class="file-status">STOLEN</span>
+                </div>
+                <div class="file-item stolen">
+                    <span class="file-name">D:\Photos\family_vacation.jpg</span>
+                    <span class="file-status">ENCRYPTED</span>
+                </div>
+                <div class="file-item stolen">
+                    <span class="file-name">C:\Users\Documents\tax_return_2024.pdf</span>
+                    <span class="file-status">STOLEN</span>
+                </div>
+                <div class="file-item stolen">
+                    <span class="file-name">C:\Users\Documents\browsing_history.log</span>
+                    <span class="file-status">STOLEN</span>
+                </div>
+                <div class="file-item stolen">
+                    <span class="file-name">D:\Work\confidential_contract.docx</span>
+                    <span class="file-status">ENCRYPTED</span>
+                </div>
+                <div class="file-item stolen">
+                    <span class="file-name">C:\Users\Desktop\notes_secret.txt</span>
+                    <span class="file-status">STOLEN</span>
+                </div>
+                <div class="file-item stolen">
+                    <span class="file-name">E:\Backup\full_system_image.img</span>
+                    <span class="file-status">UPLOADING</span>
+                </div>
+                <div class="file-item stolen">
+                    <span class="file-name">C:\Users\Documents\banks.json</span>
+                    <span class="file-status">STOLEN</span>
+                </div>
+                <div class="file-item stolen">
+                    <span class="file-name">D:\Photos\screenshots\</span>
+                    <span class="file-status">STOLEN</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="final-message">
+            <div class="emoji">&#128516;</div>
+            <p class="prank-text">You got pranked! &#128516;</p>
+            <p class="prank-sub">Your files are safe. This was just a joke.</p>
+            <button onclick="window.location.href='index.html'" style="
+                margin-top: 1rem;
+                padding: 0.7rem 1.5rem;
+                border: 2px solid #00ff41;
+                border-radius: 25px;
+                background: transparent;
+                color: #00ff41;
+                font-size: 0.85rem;
+                font-weight: bold;
+                cursor: pointer;
+                font-family: 'Courier New', monospace;
+                transition: all 0.3s;
+            " onmouseover="this.style.background='#00ff41';this.style.color='#000';this.style.boxShadow='0 0 20px rgba(0,255,65,0.5)'" onmouseout="this.style.background='transparent';this.style.color='#00ff41';this.style.boxShadow='none'">&#127918; Return to Arcade</button>
+        </div>
+    </div>
+</body>
+</html>

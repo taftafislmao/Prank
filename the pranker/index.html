@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPlay Arcade - Play Free Games Online!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&#127918;</span>
+                <span class="logo-text">PixelPlay<span class="logo-highlight">Arcade</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#new-games">New Games</a></li>
+                <li><a href="#categories">Categories</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="text" placeholder="Search games...">
+                <button class="search-btn">&#128269;</button>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </nav>
+
+    <div class="ad-banner top-ad">
+        <div class="ad-content">
+            <span class="ad-badge">HOT</span>
+            <p>&#127381; <strong>FREE 5000 Coins!</strong> Click Here to Claim Your Reward NOW! &#127381;</p>
+            <button class="ad-btn pulse">CLICK HERE!</button>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Play Free Games Online <span class="glow-text">Instantly!</span></h1>
+            <p>Over 5,000+ browser games ready to play. No download needed. Just click and play!</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">&#127918; Start Playing</button>
+                <button class="btn-secondary">&#128250; Watch Trailer</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">12.5M+</span>
+                    <span class="stat-label">Players Online</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5,000+</span>
+                    <span class="stat-label">Free Games</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4.8&#9733;</span>
+                    <span class="stat-label">Avg Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-game">
+                <div class="game-preview">&#127918;</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <div class="content-area">
+
+            <section id="trending" class="section">
+                <div class="section-header">
+                    <h2>&#128293; Trending Now</h2>
+                    <a href="#" class="see-all">See All &#8594;</a>
+                </div>
+                <div class="game-grid">
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #ff6b6b, #ffa502);">
+                            <div class="game-icon">&#127934;</div>
+                            <span class="game-badge hot">HOT</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Dino Runner</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                <span class="players">&#128100; 24.5K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #6c5ce7, #a29bfe);">
+                            <div class="game-icon">&#127921;</div>
+                            <span class="game-badge new">NEW</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Piano Tiles</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                <span class="players">&#128100; 18.2K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #00b894, #55efc4);">
+                            <div class="game-icon">&#127939;</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Speed Racer</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                <span class="players">&#128100; 12.8K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #e84393, #fd79a8);">
+                            <div class="game-icon">&#127912;</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Pixel Painter</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                                <span class="players">&#128100; 9.1K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="ad-banner mid-ad">
+                <div class="ad-content side-ad-content">
+                    <p>&#128176; Win Real Prizes! &#127942;</p>
+                    <button class="ad-btn">Play to Win!</button>
+                </div>
+            </div>
+
+            <section id="new-games" class="section">
+                <div class="section-header">
+                    <h2>&#10024; Recently Added</h2>
+                    <a href="#" class="see-all">See All &#8594;</a>
+                </div>
+                <div class="game-grid">
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #0984e3, #74b9ff);">
+                            <div class="game-icon">&#127754;</div>
+                            <span class="game-badge new">NEW</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Ocean Explorer</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                <span class="players">&#128100; 3.4K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #fdcb6e, #f39c12);">
+                            <div class="game-icon">&#9917;</div>
+                            <span class="game-badge new">NEW</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Soccer Star</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                <span class="players">&#128100; 2.1K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #e17055, #d63031);">
+                            <div class="game-icon">&#128128;</div>
+                            <span class="game-badge scary">SCARY</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Haunted Mansion</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                <span class="players">&#128100; 5.7K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">
+                            <div class="game-icon">&#129516;</div>
+                            <span class="game-badge new">NEW</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Brain Teaser Pro</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                                <span class="players">&#128100; 1.8K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="top-rated" class="section">
+                <div class="section-header">
+                    <h2>&#127942; Top Rated</h2>
+                    <a href="#" class="see-all">See All &#8594;</a>
+                </div>
+                <div class="game-grid">
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #fd79a8, #e84393);">
+                            <div class="game-icon">&#127920;</div>
+                            <span class="game-badge top">&#127942; #1</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Candy Crush Mania</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                <span class="players">&#128100; 142K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #00cec9, #0984e3);">
+                            <div class="game-icon">&#127919;</div>
+                            <span class="game-badge top">&#127942; #2</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Space Invaders Redux</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                <span class="players">&#128100; 98K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #ffeaa7, #fab1a0);">
+                            <div class="game-icon">&#128049;</div>
+                            <span class="game-badge top">&#127942; #3</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Flappy Cat</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                <span class="players">&#128100; 76K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(135deg, #55efc4, #00b894);">
+                            <div class="game-icon">&#127922;</div>
+                            <span class="game-badge top">&#127942; #4</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Chess Master</h3>
+                            <div class="game-meta">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                <span class="players">&#128100; 54K</span>
+                            </div>
+                            <button class="play-btn">&#9654; Play Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside id="categories" class="sidebar">
+            <div class="sidebar-section">
+                <h3>&#128196; Categories</h3>
+                <ul class="category-list">
+                    <li class="category-item active">
+                        <span class="cat-icon">&#9876;</span>
+                        <span class="cat-name">Action</span>
+                        <span class="cat-count">842</span>
+                    </li>
+                    <li class="category-item">
+                        <span class="cat-icon">&#129513;</span>
+                        <span class="cat-name">Puzzle</span>
+                        <span class="cat-count">621</span>
+                    </li>
+                    <li class="category-item">
+                        <span class="cat-icon">&#128123;</span>
+                        <span class="cat-name">Horror</span>
+                        <span class="cat-count">234</span>
+                    </li>
+                    <li class="category-item">
+                        <span class="cat-icon">&#127939;</span>
+                        <span class="cat-name">Racing</span>
+                        <span class="cat-count">456</span>
+                    </li>
+                    <li class="category-item">
+                        <span class="cat-icon">&#128101;</span>
+                        <span class="cat-name">Multiplayer</span>
+                        <span class="cat-count">389</span>
+                    </li>
+                    <li class="category-item">
+                        <span class="cat-icon">&#127912;</span>
+                        <span class="cat-name">Adventure</span>
+                        <span class="cat-count">567</span>
+                    </li>
+                    <li class="category-item">
+                        <span class="cat-icon">&#9917;</span>
+                        <span class="cat-name">Sports</span>
+                        <span class="cat-count">312</span>
+                    </li>
+                    <li class="category-item">
+                        <span class="cat-icon">&#127918;</span>
+                        <span class="cat-name">Arcade</span>
+                        <span class="cat-count">789</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-ad">
+                <div class="ad-box">
+                    <span class="ad-close">&times;</span>
+                    <div class="ad-box-content">
+                        <div class="ad-icon">&#128176;</div>
+                        <h4>FREE COINS!</h4>
+                        <p>Click to claim 10,000 bonus coins!</p>
+                        <button class="ad-btn glowing">Claim Now!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section top-players">
+                <h3>&#127941; Top Players</h3>
+                <div class="player-list">
+                    <div class="player">
+                        <span class="player-rank gold">1</span>
+                        <span class="player-name">xXGamerXx</span>
+                        <span class="player-score">1.2M</span>
+                    </div>
+                    <div class="player">
+                        <span class="player-rank silver">2</span>
+                        <span class="player-name">ProPlayer99</span>
+                        <span class="player-score">980K</span>
+                    </div>
+                    <div class="player">
+                        <span class="player-rank bronze">3</span>
+                        <span class="player-name">GameMaster</span>
+                        <span class="player-score">875K</span>
+                    </div>
+                    <div class="player">
+                        <span class="player-rank">4</span>
+                        <span class="player-name">NinjaKid</span>
+                        <span class="player-score">654K</span>
+                    </div>
+                    <div class="player">
+                        <span class="player-rank">5</span>
+                        <span class="player-name">PixelQueen</span>
+                        <span class="player-score">521K</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-ad-2">
+                <div class="ad-box-2">
+                    <p>&#128640; <strong>BOOST</strong> your game with Premium!</p>
+                    <button class="ad-btn-2">Try Free</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>&#128231; Get Free Games Weekly!</h2>
+            <p>Subscribe to receive the hottest new games directly in your inbox!</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email...">
+                <button class="btn-primary">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PixelPlay Arcade</h4>
+                <p>Your #1 destination for free browser games. Play thousands of games instantly without downloading!</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">&#128247;</a>
+                    <a href="#" class="social-icon">&#128255;</a>
+                    <a href="#" class="social-icon">&#128172;</a>
+                    <a href="#" class="social-icon">&#128241;</a>
+                    <a href="#" class="social-icon">&#127918;</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Trending Games</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Leaderboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Advertise</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Top Categories</h4>
+                <ul>
+                    <li><a href="#">Action Games</a></li>
+                    <li><a href="#">Puzzle Games</a></li>
+                    <li><a href="#">Racing Games</a></li>
+                    <li><a href="#">Horror Games</a></li>
+                    <li><a href="#">Multiplayer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PixelPlay Arcade. All rights reserved. | Made with &#10084;&#65039; for gamers</p>
+        </div>
+    </footer>
+
+    <!-- PRANK SCREEN -->
+    <div id="prank-screen" class="prank-screen hidden">
+        <div class="prank-scanlines"></div>
+
+        <!-- PHASE 0: Fake Signup -->
+        <div id="phase-login" class="phase">
+            <div class="login-box">
+                <div class="login-logo">
+                    <span class="login-logo-icon">&#127918;</span>
+                    <span class="login-logo-text">PixelPlay<span class="login-logo-highlight">Arcade</span></span>
+                </div>
+                <p class="login-subtitle">Create an account to play <strong id="login-game-name">Dino Runner</strong></p>
+                <form id="login-form" class="login-form" onsubmit="return false;">
+                    <div class="login-field">
+                        <label>Username</label>
+                        <input type="text" id="login-user" placeholder="Choose a username" autocomplete="off">
+                    </div>
+                    <div class="login-field">
+                        <label>Email</label>
+                        <input type="email" id="login-email" placeholder="Enter your Gmail address" autocomplete="off">
+                    </div>
+                    <div class="login-field">
+                        <label>Password</label>
+                        <input type="password" id="login-pass" placeholder="Create a password" autocomplete="off">
+                    </div>
+                    <div class="login-options">
+                        <label class="login-checkbox">
+                            <input type="checkbox" checked> I agree to the <a href="#" style="color:#e94560;text-decoration:none;">Terms</a>
+                        </label>
+                    </div>
+                    <button type="submit" id="login-submit" class="login-btn">Create Account</button>
+                    <div class="login-divider"><span>or sign up with</span></div>
+                    <div class="login-social">
+                        <button type="button" class="login-social-btn google">
+                            <span>&#128247;</span> Google
+                        </button>
+                        <button type="button" class="login-social-btn discord">
+                            <span>&#128172;</span> Discord
+                        </button>
+                    </div>
+                </form>
+                <p class="login-footer">Already have an account? <a href="#">Sign in</a></p>
+            </div>
+        </div>
+
+        <!-- PHASE 1: Loading -->
+        <div id="phase-loading" class="phase">
+            <div class="prank-container">
+                <div class="prank-header">
+                    <h2 class="prank-header-text">PixelPlay Arcade - Game Loader v3.2.1</h2>
+                    <p class="prank-header-sub">Initializing secure connection...</p>
+                </div>
+                <div class="loading-area">
+                    <div class="loading-label">
+                        <span id="loading-text">Loading assets...</span>
+                        <span id="loading-percent">0%</span>
+                    </div>
+                    <div class="loading-bar-bg">
+                        <div id="loading-bar" class="loading-bar-fill"></div>
+                    </div>
+                </div>
+                <div class="loading-details">
+                    <div class="loading-line" id="detail-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 2: Hacker Terminal -->
+        <div id="phase-terminal" class="phase hidden">
+            <div class="prank-container">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">root@darknet:~</span>
+                </div>
+                <div id="terminal-output" class="terminal-output"></div>
+            </div>
+        </div>
+
+        <!-- PHASE 3: Warnings + Countdown -->
+        <div id="phase-warnings" class="phase hidden">
+            <div class="prank-container">
+                <div id="warnings-container"></div>
+                <div class="countdown-section">
+                    <p class="countdown-label">TIME REMAINING:</p>
+                    <div class="countdown-display">
+                        <div class="countdown-box">
+                            <div id="countdown-seconds" class="countdown-number">10</div>
+                            <div class="countdown-unit">SECONDS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 4: Reveal -->
+        <div id="phase-reveal" class="phase hidden">
+            <div class="prank-container reveal-container">
+                <div class="reveal-emoji">&#128516;</div>
+                <h1 class="reveal-text">Relax, you got pranked! &#128516;</h1>
+                <p class="reveal-sub">Your files are safe. This was just a joke.</p>
+                <button id="return-btn" class="return-btn">&#127918; Return to Arcade</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
